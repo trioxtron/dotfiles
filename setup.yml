@@ -1,0 +1,9 @@
+- name: Setup
+  hosts: localhost
+  gather_facts: false
+
+  roles: 
+    - apt
+    - vim
+    - docker
+    - git
