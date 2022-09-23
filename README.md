@@ -1,0 +1,1 @@
+This repository serves the approach of learning Ansible following the goal of automating the setup of my Raspberry Pi 4 aswell as a future vServer
