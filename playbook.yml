@@ -3,7 +3,8 @@
   gather_facts: false
 
   roles:
-      - apt
-      - vim
-      - docker
-      - git
+    - apt
+    - vim
+    - docker
+    - git
+    - filebrowser
