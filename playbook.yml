@@ -2,9 +2,16 @@
   hosts: localhost
   gather_facts: false
 
+  vars:
+    fzf_version: 0.32.1
+
   roles:
     - apt
     - vim
     - docker
     - git
     - filebrowser
+    - starship
+    - antigen
+    - fzf
+    - zsh

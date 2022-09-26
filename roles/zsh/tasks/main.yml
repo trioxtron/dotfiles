@@ -1,0 +1,12 @@
+- name: Install zsh
+  apt:
+    name: zsh
+
+- name: Copy config
+  copy:
+    src: files/.zshrc
+    dest: ~/.zshrc
+
+- name: Set zsh default shell
+  become: true
+  shell: chsh -s /bin/zsh

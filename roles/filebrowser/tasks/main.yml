@@ -6,7 +6,7 @@
     state: present # Ansible core state attribute: absent -> stop and remove container // present -> check for container, if inexistent -> create container or update container // stopped // started
     restart_policy: unless-stopped # define restart conditions
     volumes: # create or mount the volumes in - docker syntax
-      - {{ filebrowser_data }}:/srv"
+      - "{{ filebrowser_data }}:/srv"
       - filebrwoser-db:/database
       - filebrowser-config:/config
     # network_mode: host # connect container to a network, choices: bridge, host, none, container:<name|id>
