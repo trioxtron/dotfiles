@@ -1,16 +1,13 @@
 - name: Setup
   hosts: localhost
-  gather_facts: false
-
   vars:
     fzf_version: 0.32.1
+    session_user: "{{ ansible_user_id }}"
 
   roles:
     - apt
     - vim
-    - docker
     - git
-    - filebrowser
     - starship
     - antigen
     - fzf
